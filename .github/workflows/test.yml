@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '0 0 1 * *'
 
 jobs:
   push:
@@ -24,4 +22,3 @@ jobs:
         run: |
           yarn
           yarn test
-          yarn build

@@ -37,5 +37,5 @@ app.use('/svg', (req: MyRequest, res) => {
 app.use('/', (req, res) => res.send('Jdenticon Generator'))
 
 // Starting server
-const port = process.env.PORT
-app.listen(port, () => logger.info(`🖼  Jdenticon Generator - running on port: ${port}`))
+const port = process.env.PORT ?? 80
+app.listen(port, () => logger.info('🖼  Jdenticon Generator'))
