@@ -6,7 +6,7 @@
     "license": "ISC",
     "main": "build/app.bundle.js",
     "engines": {
-        "node": "14.x"
+        "node": ">= 14.x"
     },
     "devDependencies": {
         "@types/express": "^4.17.9",
