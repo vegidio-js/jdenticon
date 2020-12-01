@@ -16,7 +16,7 @@ app.use((req: MyRequest, res, next) => {
 
     req.locals = {
         data: decodeURIComponent(<string>req.query.data),
-        size: Number(req.query.size ?? 200)
+        size: Number(req.query.size ?? 200),
     }
 
     next()
